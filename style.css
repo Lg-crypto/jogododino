@@ -1,0 +1,63 @@
+body{
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+#game{
+    width: 500px;
+    height: 200px;
+    border: 5px solid #000;
+}
+
+#dino{
+    width: 50px;
+    height: 100px;
+    position: relative;
+    top: 100px;
+    left: 50px;
+    background-color: #f00;
+}
+.pular{
+    animation: pular 0.5s infinite;
+}
+#inimigo{
+    width: 50px;
+    height: 50px;
+    background-color: #00f;
+    position: relative;
+    top: 50px;
+    left: 450px;
+    animation: 1s inimigo infinite linear;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    color: #fff;
+}
+
+p{
+    position: absolute;
+}
+
+
+@keyframes inimigo {
+
+    to{
+        left: -50px;
+    }
+
+}
+
+@keyframes pular{
+
+    50%{
+        top: 0px;
+    }
+    70%{
+        top: 0px;
+    }
+    100%{
+        top: 100px;
+    }
+}
